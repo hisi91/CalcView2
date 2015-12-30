@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl1">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="80dp"
+    android:paddingTop="80dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="S T A R T"
+        android:textSize="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/rl1calcview"
+        />
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/animationput"
+        android:id="@+id/rl1imageview1"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="40dp"
+        android:textColor="#77000000"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:id="@+id/rl1score"
+        android:layout_margin="20dp"
+
+
+        />
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:layout_alignParentBottom="true"
+    android:padding="40dp"
+    >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl1btodd"
+        android:text="Odd"
+        android:background="@drawable/redbt"
+        android:layout_alignParentLeft="true"
+        android:textSize="20dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl1bteven"
+        android:background="@drawable/greenbt"
+        android:text="Even"
+        android:layout_alignParentRight="true"
+        android:textSize="20dp"/>
+</RelativeLayout>
+
+
+
+    <com.goobinmob.calcview.FontsCalc
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:layout_margin="20dp"
+        app:fontName="jfrocsol.ttf"
+        android:text="00:00"
+        android:id="@+id/rl1tv"
+        />
+
+
+
+
+
+
+    <FrameLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingTop="120dp"
+        android:paddingBottom="120dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:id="@+id/fllayout"
+        android:visibility="gone"
+
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="8"
+            android:background="#222222">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="#221122"
+                android:layout_weight="3"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Game Over"
+                    android:shadowColor="#000000"
+                    android:textColor="#FFFFFF"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#221122"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00555555"
+                    android:textColor="#FFFFFF"
+                    android:text="SCORE:"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/rl2textscore"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#221122"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/rl2nbscore"
+                    android:textColor="#FFFFFF"
+                    android:text="00"
+                    android:textSize="80dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:padding="10dp">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl2home"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/greenbt"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl2restart"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/greenbt"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl2share"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/greenbt"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+</RelativeLayout>
